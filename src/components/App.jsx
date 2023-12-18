@@ -1,6 +1,5 @@
 // import { Increment } from './Exercises/Exercises';
 // import { Component } from 'react';
-import { useState, useEffect, useRef } from 'react';
 
 // export const App = () => {
 //   return (
@@ -83,6 +82,28 @@ import { useState, useEffect, useRef } from 'react';
 //   );
 // };
 
+// import { Player } from './Player/Player';
+
+// export const App = () => {
+//   return <Player source="<http://media.w3.org/2010/05/sintel/trailer.mp4>" />;
+// };
+// export const App = () => {
+//   const [planets, setPlanets] = useState(['Earth', 'Mars', 'Jupiter', 'Venus']);
+//   const [query, setQuery] = useState('');
+
+//   const filteredPlanets = planets.filter(planet => planet.includes(query));
+
+//   return (
+//     <div>
+//       {filteredPlanets.map(planet => (
+//         <div key={planet}>{planet}</div>
+//       ))}
+//     </div>
+//   );
+// };
+
+import { useState, useEffect, useRef } from 'react';
+
 export const App = () => {
   const [value, setValue] = useState(0);
   const btnRef = useRef();
@@ -114,22 +135,3 @@ export const App = () => {
     </>
   );
 };
-// import { Player } from './Player/Player';
-
-// export const App = () => {
-//   return <Player source="<http://media.w3.org/2010/05/sintel/trailer.mp4>" />;
-// };
-// export const App = () => {
-//   const [planets, setPlanets] = useState(['Earth', 'Mars', 'Jupiter', 'Venus']);
-//   const [query, setQuery] = useState('');
-
-//   const filteredPlanets = planets.filter(planet => planet.includes(query));
-
-//   return (
-//     <div>
-//       {filteredPlanets.map(planet => (
-//         <div key={planet}>{planet}</div>
-//       ))}
-//     </div>
-//   );
-// };
